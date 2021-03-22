@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metacube Parking</title>
+</head>
+<body>
+    <!-- Navbar section -->
+
+	<nav>
+		<table width="100%">
+			<tr>
+				<td><a href="#add_employee"><h3>Add Employee</h3></a> </td>
+				<td><a href="#add_vehicle"><h3>Add Vehicle</h3></a></td>
+				<td><a href="#feedback"><h3>Give Feedback</h3></a></td>
+				<td><a href="#pricing"><h3>Pricing</h3></a></td>
+			</tr>
+		</table>
+	</nav>
+        
+    <!-- Cover Image     -->
+	<img src="./Assests/Parking.jpg" height="540px" width="1340px"/>
+
+
+    <!-- Add employee section -->
+
+
+	<section id = "add_employee">
+		<h1><u>Add Employee Section </u></h1>
+		<form>
+			<table height="400" width="500" >
+				<tr>
+					<td><label for="emp_name">Employee Name : </label></td>
+					<td><input type = "text" placeholder="Enter your full name"></td>
+				</tr>
+				<tr>
+					<td><label>Employee Gender : </label>
+				</tr>
+				<tr>
+					<td width="33%"><label for="male">Male : </label>
+					<input type = "radio" name="gender" value="male"></td>
+					<td width="33%"><label for="female">Female : </label>
+					<input type = "radio" name="gender" value="female"></td>
+					<td width="33%"><label for="other">Other : </label>
+					<input type = "radio" name="gender" value="other"></td>
+				</tr>
+				<tr>
+					<td><label for="email">Email : </label></td>
+					<td><input type = "text" placeholder="Enter your email"></td>
+				</tr>
+				<tr>
+					<td><label for="pass">Password : </label></td>
+					<td><input type = "password" placeholder="Enter your password"></td>
+				</tr>
+				<tr>
+					<td><label for="conf_pass">Confirm Password : </label></td>
+					<td><input type = "password" placeholder="Re-enter your password"></td>
+				</tr>
+				<tr>
+					<td><label for="phone">Contact Number : </label></td>
+					<td><input type = "tel"  pattern="[0-9]{10}" placeholder="Enter your phone number"></td>
+				</tr>
+				<tr>
+					<td colspan="2">*contact number must contain 10 digits only!</td>
+				</tr>
+				<tr>
+					<td><input type="submit" name="add-employee" value="Add Employee" /></td>
+				</tr>
+			</table>
+		</form>
+	</section>
+
+	<br><br>
+
+
+<!-- Add vehicle section -->
+
+
+	<section id="add_vehicle">
+		<h1> <u> Add Vehicle Section </u> </h1>
+		<form>
+			<table height="400" width="500" >
+				<tr>
+					<td><label for="veh_company">Vehicle Company : </label></td>
+					<td><input type = "text" placeholder="Enter vehicle company name"></td>
+				</tr>
+				<tr>
+					<td><label for="veh_model">Vehicle Model : </label></td>
+					<td><input type = "text" placeholder="Enter vehicle model"></td>
+				</tr>
+				<tr>
+					<td><label>Vehicle Type : </label></td>
+				</tr>
+				<tr>
+					<td width="33%"><label for="sedan">Sedan : </label>
+					<input type = "radio" name="type" value="sedan"></td>
+					<td width="33%"><label for="hatchback">Hatchback : </label>
+					<input type = "radio" name="type" value="hatchback"></td>
+					<td width="33%"><label for="suv">SUV : </label>
+					<input type = "radio" name="type" value="suv"></td>
+				</tr>
+				<tr>
+					<td><label for="veh_num">Vehicle Number : </label></td>
+					<td><input type = "number" placeholder="Enter vehicle number"></td>
+				</tr>
+				<tr>
+					<td><label for="emp_id">Employee ID : </label></td>
+					<td><input type = "text" placeholder="Enter your employee id"></td>
+				</tr>
+				<tr>
+					<td><label for="emp_id">Identification : </label></td>
+					<td><textarea rows="5" placeholder="Enter identifications of your vehicle here !"></textarea></td>
+				</tr>
+			</table>
+		</form>
+	</section>
+	<br><br>
+	
+<!-- Send feedback section -->
+
+	<section id="feedback">
+		<h1> <u> Send Feedback </u></h2>
+		<form>
+			<table height="400" width="500" >
+				<tr>
+					<td><label for="emp_name">Employee Name : </label></td>
+					<td><input type = "text" placeholder="Enter your full name"></td>
+				</tr>
+				<tr>
+					<td><label for="email">Email : </label></td>
+					<td><input type = "text" placeholder="Enter your email"></td>
+				</tr>
+				<tr>
+					<td><label for="subject">Subject : </label></td>
+					<td><input type = "text" placeholder="Enter subject"></td>
+				</tr>
+				<tr>
+					<td><label for="feedback">Feedback : </label></td>
+					<td><textarea rows="5" placeholder="Enter your feedback !"></textarea></td>
+				</tr>
+				<tr>
+					<td><input type="submit" name="send_feedback" value="Send" /></td>
+				</tr>
+			</table>
+		</form>
+	</section>
+	<br><br>
+	
+	
+<!-- Pricing section -->
+
+
+	<section id="pricing">
+		<h1> <u>Pricing Section : </u></h1>
+		<div>
+			<h4>CYCLE</h4>
+			<div> <h3>$100</h3> /month </div>
+			<div>
+				<div>$5 Daily</div>
+				<div>$100 Monthly</div>
+				<div>$500 Yearly</div>
+			</div>
+			<div> <button>Purchase Now</button> </div>
+		</div>
+		<br>
+		<div>
+			<h4>MOTOR CYCLE</h4>
+			<div> <h3>$200</h3> /month </div>
+			<div>
+				<div>$10 Daily</div>
+				<div>$200 Monthly</div>
+				<div>$1000 Yearly</div>
+			</div>
+			<div> <button>Purchase Now</button> </div>
+		</div>
+		<br>
+		<div>
+			<h4>FOUR WHEELERS</h4>
+			<div> <h3>$500</h3> /month </div>
+			<div>
+				<div>$20 Daily</div>
+				<div>$500 Monthly</div>
+				<div>$3500 Yearly</div>
+			</div>
+			<div> <button>Purchase Now</button> </div>
+		</div>
+		
+	</section>
+</body>
+</html>
