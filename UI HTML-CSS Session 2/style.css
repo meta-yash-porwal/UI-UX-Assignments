@@ -1,0 +1,107 @@
+#add_employee, #add_vehicle, .pricing, .feedback-heading {
+    text-align: center;
+}
+
+
+a {
+    color: #FFF;
+    text-decoration:underline #FFF;
+}
+
+h1 {
+    text-decoration: underline;
+    background-color: rgb(58, 126, 84);
+    display: inline-block;
+}
+
+h1:hover {
+    background-color: rgb(111, 175, 136);
+}
+
+.banner-image {
+    background-image: url('./Assets/Banner/Parking.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.top-nav {
+    background-color: #333;
+}
+
+
+.bg-img {
+    /* The image used */
+    background-image: url("./Assets/Banner/Parking.jpg");
+  
+    min-height: 550px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+  }
+  
+
+.pricing-cycle  {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    background-color: rgb(111, 175, 136);
+}
+
+.pricing-motorcycle  {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    background-color: rgb(58, 126, 84);
+}
+
+.pricing-car  {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    background-color: rgb(111, 175, 136);
+}
+
+button {
+    font-size: 20px;
+    margin: 25px 0px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(111, 175, 136);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .submit {
+      font-size: 20px;
+  }
+
+  .feedback {
+      background-color: rgb(111, 175, 136);
+  }
+
+  .feedback-img {
+      float: right;
+      width: 560px;
+      margin-right: 90px;
+  }
