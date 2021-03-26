@@ -1,4 +1,7 @@
 .link-underline:hover {
     text-decoration: underline;
 }
-    
+ 
+.nav-scrollable {
+    overflow-x: auto;
+}
