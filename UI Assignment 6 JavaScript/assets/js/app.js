@@ -221,58 +221,64 @@ function addVehicle() {
 
 
 function carType() {
-    var ele = document.querySelectorAll('#vehicle-type');
-    console.log(ele.length);
-    // document.querySelectorAll("#vehicle-type").addEventListener('click', function (e) {
-        // ele[0].checked = true;
-        ele.forEach(function(elem) {
-            elem.addEventListener('keypress', function (e) {
-                if (e.key === 'Enter') {
-        
-                if(ele[index].checked) {
+    var ele = document.querySelectorAll('input[name="vehicle-type"]');
 
-                    alert(ele[index]);
-                    checked = ele[index];
+    ele.forEach(function(elem) {
+        elem.addEventListener('click', function (e) {
+
+            if(elem.checked) {
+                checked = elem;
+                console.log(checked);
+
+
+
+
+                document.querySelector('label[for="vehicle-type"]').classList.add("d-none");
+
+                document.querySelector('label[for="cycle"]').classList.add("d-none");
+                document.querySelector('#cycle').classList.add("d-none");
+
+                document.querySelector('label[for="motorcycle"]').classList.add("d-none");
+                document.querySelector('#motorcycle').classList.add("d-none");
+
+                document.querySelector('label[for="wheel4"]').classList.add("d-none");
+                document.querySelector('#wheel4').classList.add("d-none");
+
+
+                document.querySelector('label[for="vehicle-num"]').classList.remove("d-none");
+                document.querySelector('#vehicle-num').classList.remove("d-none");
+
+                document.querySelector('#vehicle-num').addEventListener('keypress', function (e) {
+                    if (e.key === 'Enter') {
+                        
+                        document.querySelector('label[for="vehicle-num"]').classList.add("d-none");
+                        document.querySelector('#vehicle-num').classList.add("d-none");
                 
-                    document.querySelector('label[for="vehicle-type"]').classList.add("d-none");
+                        
+                        document.querySelector('label[for="emp-id"]').classList.remove("d-none");
+                        document.querySelector('#emp-id').classList.remove("d-none");   
 
-                    document.querySelector('label[for="cycle"]').classList.add("d-none");
-                    document.querySelector('#cycle').classList.add("d-none");
-
-                    document.querySelector('label[for="motorcycle"]').classList.add("d-none");
-                    document.querySelector('#motorcycle').classList.add("d-none");
-
-                    document.querySelector('label[for="wheel4"]').classList.add("d-none");
-                    document.querySelector('#wheel4').classList.add("d-none");
+                        addVehicle2();
+                    }
+                });
 
 
-                    document.querySelector('label[for="vehicle-num"]').classList.remove("d-none");
-                    document.querySelector('#vehicle-num').classList.remove("d-none");
-
-                    document.querySelector('#vehicle-num').addEventListener('keypress', function (e) {
-                        if (e.key === 'Enter') {
-                            
-                            document.querySelector('label[for="vehicle-num"]').classList.add("d-none");
-                            document.querySelector('#vehicle-num').classList.add("d-none");
+            }
                     
-                            
-                            document.querySelector('label[for="emp-id"]').classList.remove("d-none");
-                            document.querySelector('#emp-id').classList.remove("d-none");   
-
-                            addVehicle2();
-                        }
-                    });
-                    
-                }
-        }
+        });
     });
 }
 
+
+                
 
 
 function addVehicle2() {
     document.querySelector('#emp-id').addEventListener('keypress', function (e) {
         if (e.key === 'Enter') {
+
+            document.querySelector('label[for="emp-id"]').classList.add("d-none");
+            document.querySelector('#emp-id').classList.add("d-none");   
 
             document.querySelector('label[for="vehicle-id"]').classList.remove("d-none");
             document.querySelector('#vehicle-id').classList.remove("d-none");    
@@ -287,14 +293,52 @@ function addVehicle2() {
 
                 document.querySelector('label[for="vehicle-id"]').classList.add("d-none");
                 document.querySelector('#vehicle-id').classList.add("d-none");
+                document.querySelector('#add-vehicle-head').classList.add("d-none");
+                document.querySelector('#add-vehicle').classList.add("d-none");
                 
                 
-                document.querySelector('label[#pricing]').classList.remove("d-none");
+                document.querySelector('#pricing').classList.remove("d-none");
 
-                // if(checked == document.querySelector('label[for="cycle"]'))
+                if(checked.value == document.querySelector('label[for="cycle-pricing"]').innerHTML) {
+
+                    document.querySelector('label[for="cycle-pricing"]').classList.remove("d-none");
+                    document.querySelector('#cycle-daily').classList.remove("d-none");
+                    document.querySelector('#input-cycle-daily').classList.remove("d-none");
+                    document.querySelector('#cycle-month').classList.remove("d-none");
+                    document.querySelector('#input-cycle-monthly').classList.remove("d-none");
+                    document.querySelector('#cycle-year').classList.remove("d-none");
+                    document.querySelector('#input-cycle-yearly').classList.remove("d-none");
+
+                }
+
+
+                else if(checked.value == document.querySelector('label[for="motorcycle-pricing"]').innerHTML) {
+
+                    document.querySelector('label[for="motorcycle-pricing"]').classList.remove("d-none");
+                    document.querySelector('#motorcycle-daily').classList.remove("d-none");
+                    document.querySelector('#input-motorcycle-daily').classList.remove("d-none");
+                    document.querySelector('#motorcycle-month').classList.remove("d-none");
+                    document.querySelector('#input-motorcycle-monthly').classList.remove("d-none");
+                    document.querySelector('#motorcycle-year').classList.remove("d-none");
+                    document.querySelector('#input-motorcycle-yearly').classList.remove("d-none");
+                
+                }
 
 
 
+                else if(checked.value == document.querySelector('label[for="wheel4-pricing"]').innerHTML) {
+
+                    document.querySelector('label[for="wheel4-pricing"]').classList.remove("d-none");
+                    document.querySelector('#wheel4-daily').classList.remove("d-none");
+                    document.querySelector('#input-wheel4-daily').classList.remove("d-none");
+                    document.querySelector('#wheel4-month').classList.remove("d-none");
+                    document.querySelector('#input-wheel4-monthly').classList.remove("d-none");
+                    document.querySelector('#wheel4-year').classList.remove("d-none");
+                    document.querySelector('#input-wheel4-yearly').classList.remove("d-none");
+
+                }
+
+                document.querySelector('#getPass').classList.remove("d-none");
 
             });
 

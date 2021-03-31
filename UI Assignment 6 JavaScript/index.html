@@ -101,13 +101,13 @@
                     <br>
 
 					<label id="vehicle-type" for="cycle" class="d-none">Cycle : </label>
-					<input type = "radio" name="type" id="cycle" value="Cycle" class="d-none">
+					<input type = "radio" name="vehicle-type" id="cycle" value="Cycle" class="d-none">
 
 					<label id="vehicle-type" for="motorcycle" class="d-none">Motorcycle : </label>
-					<input type ="radio" id="motorcycle" class="d-none" name="type" value="Motorcycle">
+					<input type ="radio" id="motorcycle" class="d-none" name="vehicle-type" value="Motorcycle">
 
 					<label id="vehicle-type" class="d-none" for="wheel4">Four Wheeler : </label>
-					<input type = "radio" name="type" class="d-none" id="wheel4" value="Four Wheeler">
+					<input type = "radio" name="vehicle-type" class="d-none" id="wheel4" value="Four Wheeler">
 
                     <br>
 
@@ -147,40 +147,52 @@
             <div class="card card-body">
                 <form>
 
-                    <label for="cycle">Cycle</label>
-                    <label id="cycle" for="daily" class="d-none">Daily : 5</label>
-					<input type = "radio" name="cycle" id="daily" value="daily" class="d-none">
+                    <label for="cycle-pricing" class="d-none">Cycle</label>
 
-					<label id="cycle" for="monthly" class="d-none">Monthly : 100</label>
-					<input type ="radio" id="monthly" class="d-none" name="cycle" value="monthly">
+                    <br>
 
-					<label id="cycle" class="d-none" for="yearly">Yearly : 500</label>
-					<input type = "radio" name="cycle" class="d-none" id="yearly" value="yearly">
+                    <label id="cycle-daily" for="daily" class="d-none">Daily : 5</label>
+					<input type = "radio" name="cycle" id="input-cycle-daily" value="daily" class="d-none">
+
+					<label id="cycle-month" for="monthly" class="d-none">Monthly : 100</label>
+					<input type ="radio" id="input-cycle-monthly" class="d-none" name="cycle" value="monthly">
+
+					<label id="cycle-year" class="d-none" for="yearly">Yearly : 500</label>
+					<input type = "radio" name="cycle" class="d-none" id="input-cycle-yearly" value="yearly">
 
 
                     
-                    <label for="motorcycle">Motorcycle</label>
-                    <label id="motorcycle" for="daily" class="d-none">Daily : 10</label>
-					<input type = "radio" name="motorcycle" id="daily" value="daily" class="d-none">
+                    <label for="motorcycle-pricing" class="d-none">Motorcycle</label>
+                    
+                    <br>
 
-					<label id="motorcycle" for="monthly" class="d-none">Monthly : 200</label>
-					<input type ="radio" id="monthly" class="d-none" name="motorcycle" value="monthly">
+                    <label id="motorcycle-daily" for="daily" class="d-none">Daily : 10</label>
+					<input type ="radio" name="motorcycle" id="input-motorcycle-daily" value="daily" class="d-none">
 
-					<label id="motorcycle" class="d-none" for="yearly">Yearly : 1000</label>
-					<input type = "radio" name="motorcycle" class="d-none" id="yearly" value="yearly">
+					<label id="motorcycle-month" for="monthly" class="d-none">Monthly : 200</label>
+					<input type ="radio" id="input-motorcycle-monthly" class="d-none" name="motorcycle" value="monthly">
+
+					<label id="motorcycle-year" class="d-none" for="yearly">Yearly : 1000</label>
+					<input type = "radio" name="motorcycle" class="d-none" id="input-motorcycle-yearly" value="yearly">
 
 
 
 
-                    <label for="wheel4">Four Wheeler</label>
-                    <label id="wheel4" for="daily" class="d-none">Daily : 20</label>
-					<input type = "radio" name="wheel4" id="daily" value="daily" class="d-none">
+                    <label for="wheel4-pricing" class="d-none">Four Wheeler</label>
+                    
+                    <br>
 
-					<label id="wheel4" for="monthly" class="d-none">Monthly : 500</label>
-					<input type ="radio" id="monthly" class="d-none" name="wheel4" value="monthly">
+                    <label id="wheel4-daily" for="daily" class="d-none">Daily : 20</label>
+					<input type = "radio" name="wheel4" id="input-wheel4-daily" value="daily" class="d-none">
 
-					<label id="wheel4" class="d-none" for="yearly">Yearly : 3500</label>
-					<input type = "radio" name="wheel4" class="d-none" id="yearly" value="yearly">
+					<label id="wheel4-month" for="monthly" class="d-none">Monthly : 500</label>
+					<input type ="radio" id="input-wheel4-monthly" class="d-none" name="wheel4" value="monthly">
+
+					<label id="wheel4-year" class="d-none" for="yearly">Yearly : 3500</label>
+					<input type = "radio" name="yearly" class="d-none" id="input-wheel4-yearly" value="yearly">
+
+
+                    <input type="button" class="d-none" name="getPass" id="getPass" value="Get Pass" name="Get Pass">
 
                 </form>
 
