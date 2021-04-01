@@ -1,4 +1,8 @@
 // .*?[^0-9].*
+
+
+
+
 var id = 1;
 var empName, pass, checked;
 
@@ -291,6 +295,7 @@ function addVehicle2() {
                 
 
 
+
                 document.querySelector('label[for="vehicle-id"]').classList.add("d-none");
                 document.querySelector('#vehicle-id').classList.add("d-none");
                 document.querySelector('#add-vehicle-head').classList.add("d-none");
@@ -299,6 +304,7 @@ function addVehicle2() {
                 
                 document.querySelector('#pricing').classList.remove("d-none");
 
+                
                 if(checked.value == document.querySelector('label[for="cycle-pricing"]').innerHTML) {
 
                     document.querySelector('label[for="cycle-pricing"]').classList.remove("d-none");
@@ -338,8 +344,78 @@ function addVehicle2() {
 
                 }
 
-                document.querySelector('#getPass').classList.remove("d-none");
 
+                document.querySelector('#getPass').classList.remove("d-none");
+                
+                
+                document.querySelector('#getPass').addEventListener('click',function(e){
+
+                    if(document.querySelectorAll(
+                        '#input-wheel4-daily,#input-wheel4-monthly,#input-wheel4-yearly,#input-cycle-daily,#input-cycle-monthly,#input-cycle-yearly,#input-motorcycle-daily,#input-motorcycle-monthly,#input-motorcycle-yearly'
+                        ).checked) {
+
+
+                        document.querySelector('label[for="wheel4-pricing"]').classList.add("d-none");
+                        document.querySelector('#wheel4-daily').classList.add("d-none");
+                        document.querySelector('#input-wheel4-daily').classList.add("d-none");
+                        document.querySelector('#wheel4-month').classList.add("d-none");
+                        document.querySelector('#input-wheel4-monthly').classList.add("d-none");
+                        document.querySelector('#wheel4-year').classList.add("d-none");
+                        document.querySelector('#input-wheel4-yearly').classList.add("d-none");
+
+
+
+
+
+
+                        document.querySelector('#pricing').classList.add("d-none");
+                        document.querySelector('#pricing-header').classList.add("d-none");
+
+
+
+                        // document.querySelector('label[for="emp-name"]').innerHTML = checked.value + " $" + ;
+                        // document.querySelector('label[for="emp-name"]').;
+                    }
+
+                    // else if(document.querySelector('#input-wheel4-monthly').checked) {
+
+                    //     document.querySelector('label[for="wheel4-pricing"]').classList.add("d-none");
+                    //     document.querySelector('#wheel4-daily').classList.add("d-none");
+                    //     document.querySelector('#input-wheel4-daily').classList.add("d-none");
+                    //     document.querySelector('#wheel4-month').classList.add("d-none");
+                    //     document.querySelector('#input-wheel4-monthly').classList.add("d-none");
+                    //     document.querySelector('#wheel4-year').classList.add("d-none");
+                    //     document.querySelector('#input-wheel4-yearly').classList.add("d-none");
+
+
+
+                    //     document.querySelector('#pricing').classList.add("d-none");
+                    //     document.querySelector('#pricing-header').classList.add("d-none");
+
+
+                    // }
+
+                    // else if(document.querySelector('#input-wheel4-yearly').checked) {
+
+                    //     document.querySelector('label[for="wheel4-pricing"]').classList.add("d-none");
+                    //     document.querySelector('#wheel4-daily').classList.add("d-none");
+                    //     document.querySelector('#input-wheel4-daily').classList.add("d-none");
+                    //     document.querySelector('#wheel4-month').classList.add("d-none");
+                    //     document.querySelector('#input-wheel4-monthly').classList.add("d-none");
+                    //     document.querySelector('#wheel4-year').classList.add("d-none");
+                    //     document.querySelector('#input-wheel4-yearly').classList.add("d-none");
+
+
+
+                    //     document.querySelector('#pricing').classList.add("d-none");
+                    //     document.querySelector('#pricing-header').classList.add("d-none");
+
+
+
+                    // }
+
+
+                });
             });
 
 
