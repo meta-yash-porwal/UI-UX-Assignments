@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Metacube Parking System</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <p>
+            <h3>
+                <a class="bg-dark hover-white" id="emp-details-header" data-toggle="collapse" href="#emp-details" role="button" aria-expanded="true" aria-controls="emp-details">
+                Employee Details
+                </a>
+            </h3>
+            <!-- <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Button with data-target
+            </button> -->
+        </p>
+
+        <div class="collapse" id="emp-details">
+            <div class="card card-body">
+                <form>
+                    <label for="emp-name">Employee Name: </label>
+                    <input type="text" name="emp-name" placeholder="Enter your full name" id="emp-name" pattern="[^0-9]*" minlength="2">
+                    
+                    <!-- <br> -->
+
+                    <label class="d-none" id="emp-gender">Employee Gender : </label>
+                    
+                    <!-- <br> -->
+
+					<label class="d-none" for="male">Male : </label>
+					<input class="d-none" type = "radio" name="gender" id="male" value="male">
+
+					<label class="d-none" for="female">Female : </label>
+					<input class="d-none" type = "radio" name="gender" value="female" id="female">
+
+					<label class="d-none" for="other">Other : </label>
+					<input type = "radio" class="d-none" name="gender" value="other" id="other">
+                    
+                    <!-- <br> -->
+
+					<label class="d-none" for="email">Email : </label>
+					<input type = "email" class="d-none" placeholder="Enter your email" id="email">
+                    
+                    <!-- <br> -->
+
+					<label for="pass" class="d-none">Password : </label>
+					<input type = "password" class="d-none" pattern="[0-9]+[a-z]+[A-z]+" placeholder="Enter your password" id="pass" minlength="8" >
+                    
+                    <!-- <br> -->
+
+					<label class="d-none" for="conf-pass">Confirm Password : </label>
+					<input type = "password" class="d-none" pattern="[0-9]+[a-z]+[A-z]+" placeholder="Re-enter your password" id="conf-pass" minlength="8">
+                    
+                    <!-- <br> -->
+
+					<label for="phone" class="d-none">Contact Number : </label>
+					<input type = "tel"  pattern="[0-9]*" class="d-none" minlength="8" placeholder="Enter your phone number" id="phone">
+                    
+                    <!-- <br> -->
+
+                    <!-- <input type="submit" class="d-none" value="Add Employee"> -->
+                </form>
+            </div>
+        </div>
+
+
+
+
+        <p>
+            <h3>
+                <a class="bg-dark hover-white d-none" id="add-vehicle-head" data-toggle="collapse" href="#add-vehicle" role="button" aria-expanded="true" aria-controls="add-vehicle">
+                Add Vehicle
+                </a>
+            </h3>
+
+        </p>
+        <div class="collapse" id="add-vehicle">
+            <div class="card card-body">
+                <form>
+                    <label for="vehicle-name" class="d-none">Vehicle Name: </label>
+                    <input type="text" name="vehicle-name" class="d-none" placeholder="Enter your full name" id="vehicle-name" pattern="[^0-9]*" minlength="2">
+                    
+                    <!-- <br> -->
+
+                    <label for="vehicle-model" class="d-none">Vehicle Model : </label>
+					<input type = "text" id="vehicle-model" class="d-none" placeholder="Enter vehicle model">
+
+                    <!-- <br> -->
+
+					<label for="vehicle-type" class="d-none">Vehicle Type : </label>
+
+                    <!-- <br> -->
+
+					<label id="vehicle-type" for="cycle" class="d-none">Cycle : </label>
+					<input type = "radio" name="vehicle-type" id="cycle" value="Cycle" class="d-none">
+
+					<label id="vehicle-type" for="motorcycle" class="d-none">Motorcycle : </label>
+					<input type ="radio" id="motorcycle" class="d-none" name="vehicle-type" value="Motorcycle">
+
+					<label id="vehicle-type" class="d-none" for="wheel4">Four Wheeler : </label>
+					<input type = "radio" name="vehicle-type" class="d-none" id="wheel4" value="Four Wheeler">
+
+                    <!-- <br> -->
+
+					<label for="vehicle-num" class="d-none">Vehicle Number : </label>
+					<input id="vehicle-num" class="d-none" type = "text" placeholder="Enter vehicle number">
+
+                    <!-- <br> -->
+
+					<label for="emp-id" class="d-none">Employee ID : </label>
+					<input id="emp-id" type = "text" class="d-none" placeholder="Enter your employee id">
+
+                    <!-- <br> -->
+
+					<label for="vehicle-id" class="d-none">Identification : </label>
+					<textarea class="d-none" id="vehicle-id" rows="5" placeholder="Enter identifications of your vehicle here !"></textarea>
+                      
+                    <!-- <br> -->
+
+                    <!-- <input type="submit" class="d-none" value="Add Vehicle"> -->
+                
+                </form>
+            </div>
+        </div>
+
+
+
+
+        <p>
+            <h3>
+                <a class="bg-dark hover-white d-none" id="pricing-header" data-toggle="collapse" href="#pricing" role="button" aria-expanded="true" aria-controls="#pricing">
+                Pricing
+                </a>
+            </h3>
+
+        </p>
+        <div class="collapse" id="pricing">
+            <div class="card card-body">
+                <form>
+
+                    <label for="cycle-pricing" class="d-none">Cycle</label>
+
+                    <!-- <br> -->
+
+                    <label id="cycle-daily" for="input-cycle-daily" class="d-none">Daily : 5</label>
+					<input type = "radio" name="cycle" id="input-cycle-daily" value="daily" class="d-none">
+
+					<label id="cycle-month" for="input-cycle-monthly" class="d-none">Monthly : 100</label>
+					<input type ="radio" id="input-cycle-monthly" class="d-none" name="cycle" value="monthly">
+
+					<label id="cycle-year" class="d-none" for="input-cycle-yearly">Yearly : 500</label>
+					<input type = "radio" name="cycle" class="d-none" id="input-cycle-yearly" value="yearly">
+
+
+                    
+                    <label for="motorcycle-pricing" class="d-none">Motorcycle</label>
+                    
+                    <!-- <br> -->
+
+                    <label id="motorcycle-daily" for="input-motorcycle-daily" class="d-none">Daily : 10</label>
+					<input type ="radio" name="motorcycle" id="input-motorcycle-daily" value="daily" class="d-none">
+
+					<label id="motorcycle-month" for="input-motorcycle-monthly" class="d-none">Monthly : 200</label>
+					<input type ="radio" id="input-motorcycle-monthly" class="d-none" name="motorcycle" value="monthly">
+
+					<label id="motorcycle-year" class="d-none" for="input-motorcycle-yearly">Yearly : 1000</label>
+					<input  type = "radio" name="motorcycle" class="d-none" id="input-motorcycle-yearly" value="yearly">
+
+
+
+
+                    <label for="wheel4-pricing" class="d-none">Four Wheeler</label>
+                    
+                    <!-- <br> -->
+
+                    <label id="wheel4-daily" for="input-wheel4-daily" class="d-none">Daily : 20</label>
+					<input type = "radio" name="wheel4" id="input-wheel4-daily" value="daily" class="d-none">
+
+					<label id="wheel4-month" for="input-wheel4-monthly" class="d-none">Monthly : 500</label>
+					<input type ="radio" id="input-wheel4-monthly" class="d-none" name="wheel4" value="monthly">
+
+					<label id="wheel4-year" class="d-none" for="input-wheel4-yearly">Yearly : 3500</label>
+					<input type = "radio" name="wheel4" class="d-none" id="input-wheel4-yearly" value="yearly">
+
+
+                    <input type="button" class="d-none" name="getPass" id="getPass" value="Get Pass" name="Get Pass">
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="./assets/js/jquery-3.5.1.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
